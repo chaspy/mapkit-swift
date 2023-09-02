@@ -11,6 +11,7 @@
 		2B2CCB732AA3597700772A32 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2CCB722AA3597700772A32 /* ContentView.swift */; };
 		2B2CCB752AA3597800772A32 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2CCB742AA3597800772A32 /* Assets.xcassets */; };
 		2B2CCB792AA3597800772A32 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2B2CCB782AA3597800772A32 /* Preview Assets.xcassets */; };
+		2BEA787E2AA37A99007CE5B9 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BEA787D2AA37A99007CE5B9 /* MapView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2B2CCB742AA3597800772A32 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2B2CCB762AA3597800772A32 /* mapkit_swift.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mapkit_swift.entitlements; sourceTree = "<group>"; };
 		2B2CCB782AA3597800772A32 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		2BEA787D2AA37A99007CE5B9 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +55,7 @@
 			isa = PBXGroup;
 			children = (
 				2B2CCB702AA3597700772A32 /* mapkit_swiftApp.swift */,
+				2BEA787D2AA37A99007CE5B9 /* MapView.swift */,
 				2B2CCB722AA3597700772A32 /* ContentView.swift */,
 				2B2CCB742AA3597800772A32 /* Assets.xcassets */,
 				2B2CCB762AA3597800772A32 /* mapkit_swift.entitlements */,
@@ -140,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2B2CCB732AA3597700772A32 /* ContentView.swift in Sources */,
+				2BEA787E2AA37A99007CE5B9 /* MapView.swift in Sources */,
 				2B2CCB712AA3597700772A32 /* mapkit_swiftApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
