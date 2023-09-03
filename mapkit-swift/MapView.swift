@@ -8,7 +8,7 @@
 import SwiftUI
 import MapKit
 
-enum MapViewType {
+enum MapType {
     case standard
     case satellite
     case hybrid
@@ -25,6 +25,17 @@ struct MapView: UIViewRepresentable {
     
     func updateUIView(_ uiView: MKMapView, context: Context){
         print("検索キーワード:\(searchKey)")
+        
+        switch mapType{
+        case .standard:
+            uiView.preferredConfiguration = MKStandardMapConfiguration(elevationStyle: .flat)
+            
+        case .satellite:
+            uiView.preferredConfiguration = MKImageryMapConfiguration()
+            
+        case .hybrid:
+            uiView.preferredConfiguration = MKHybridMapConfiguration()
+        }
         
         let geocoder = CLGeocoder()
         
