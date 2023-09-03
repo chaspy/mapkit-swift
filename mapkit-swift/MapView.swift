@@ -17,6 +17,20 @@ struct MapView: UIViewRepresentable {
     
     func updateUIView(_ uiView: MKMapView, context: Context){
         print("検索キーワード:\(searchKey)")
+        
+        let geocoder = CLGeocoder()
+        
+        geocoder.geocodeAddressString (
+            searchKey,
+            completionHandler: { (placemarks, error) in
+                if let placemarks,
+                   let firstPlacemark = placemarks.first,
+                   let location = firstPlacemark.location {
+                    
+                    let targetCoordinate = location.coordinate
+                    print("緯度経度：\(targetCoordinate)")
+                }
+            })
     }
 }
 
