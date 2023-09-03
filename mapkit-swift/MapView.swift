@@ -29,6 +29,21 @@ struct MapView: UIViewRepresentable {
                     
                     let targetCoordinate = location.coordinate
                     print("緯度経度：\(targetCoordinate)")
+                    
+                    let pin =  MKPointAnnotation()
+                    
+                    pin.coordinate = targetCoordinate
+                    
+                    pin.title = searchKey
+                    
+                    uiView.addAnnotation(pin)
+                    
+                    uiView.region = MKCoordinateRegion(
+                        center: targetCoordinate,
+                        latitudinalMeters: 500.0,
+                        longitudinalMeters: 500.0
+                    )
+                    
                 }
             })
     }
