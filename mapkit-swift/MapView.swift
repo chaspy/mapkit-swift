@@ -8,8 +8,16 @@
 import SwiftUI
 import MapKit
 
+enum MapViewType {
+    case standard
+    case satellite
+    case hybrid
+}
+
 struct MapView: UIViewRepresentable {
     let searchKey: String
+    
+    let mapType: MapType
     
     func makeUIView(context: Context) -> MKMapView {
         MKMapView()
@@ -51,6 +59,6 @@ struct MapView: UIViewRepresentable {
 
 struct MapView_Previews: PreviewProvider {
     static var previews: some View {
-        MapView(searchKey: "羽田空港")
+        MapView(searchKey: "羽田空港", mapType: .standard)
     }
 }
